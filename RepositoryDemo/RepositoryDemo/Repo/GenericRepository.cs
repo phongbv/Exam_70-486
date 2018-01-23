@@ -16,24 +16,29 @@ namespace RepositoryDemo.Repo
             this.dataContext = dataContext;
             dbSet = dataContext.Set<TEntity>();
         }
+        public IEnumerable<TEntity> GetAllRecords()
+        {
+            return dbSet.ToList();
+        }
+        public IEnumerable<TEntity> GetAllRecordsWithoutTracking()
+        {
+            return dbSet.AsNoTracking().ToList();
+        }
         public void Add(TEntity entity)
         {
-            throw new NotImplementedException();
+            dbSet.Add(entity);
         }
 
         public void Delete(TEntity entity)
         {
-            throw new NotImplementedException();
-        }
-
-        public IEnumerable<TEntity> GetAllRecords()
-        {
-            throw new NotImplementedException();
+            dbSet.Attach(entity);
+            dataContext.Entry(entity).State = EntityState.Deleted;
         }
 
         public void Update(TEntity entity)
         {
-            throw new NotImplementedException();
+            dbSet.Attach(entity);
+            dataContext.Entry(entity).State = EntityState.Modified;
         }
     }
 }

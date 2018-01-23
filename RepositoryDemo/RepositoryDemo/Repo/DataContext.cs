@@ -11,5 +11,7 @@ namespace RepositoryDemo.Repo
         public DataContext() : base("name=DataContext")
         {
         }
+
+        public System.Data.Entity.DbSet<RepositoryDemo.Entity.CustomerEntity> CustomerEntities { get; set; }
     }
 }

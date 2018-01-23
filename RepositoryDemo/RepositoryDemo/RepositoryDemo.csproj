@@ -123,6 +123,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repo\DataContext.cs" />
     <Compile Include="Repo\GenericRepository.cs" />
+    <Compile Include="Repo\IGenericUnitOfWork.cs" />
     <Compile Include="Repo\IGenericRepository.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -133,8 +134,8 @@
     <None Include="packages.config" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Customer\Index.cshtml" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+    <Content Include="Views\Customer\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
