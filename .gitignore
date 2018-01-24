@@ -5,3 +5,6 @@
 /.vs
 /RepositoryDemo/.vs
 /RepositoryDemo/RepositoryDemo/obj/Debug
+/AsyncController/.vs/ImmediateRefreshWithLongDBQuery/v15
+/AsyncController/ImmediateRefreshWithLongDBQuery/bin
+/AsyncController/ImmediateRefreshWithLongDBQuery/obj/Debug
