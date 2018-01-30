@@ -8,3 +8,6 @@
 /AsyncController/.vs/ImmediateRefreshWithLongDBQuery/v15
 /AsyncController/ImmediateRefreshWithLongDBQuery/bin
 /AsyncController/ImmediateRefreshWithLongDBQuery/obj/Debug
+/WebApiWithAsp.netCore/WebApiWithAsp.netCore/bin/Debug/netcoreapp2.0
+/WebApiWithAsp.netCore/.vs
+/WebApiWithAsp.netCore/WebApiWithAsp.netCore/obj
